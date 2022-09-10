@@ -3,16 +3,20 @@ class Pat
 {
     public static void main(String args[])
     {
-        int i,j,N;
         Scanner sc=new Scanner(System.in);
+        int N,i,j;
         N=sc.nextInt();
         for(i=1;i<=N;i++)
         {
             for(j=1;j<=N;j++)
             {
-                if((i+j)<=N+1)
+                if(i==j | i+j==N+1)
                 {
-                    System.out.print(j);
+                    System.out.print("x");
+                }
+                else
+                {
+                    System.out.print("0");
                 }
             }
             System.out.print("
