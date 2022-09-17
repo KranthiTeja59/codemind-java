@@ -4,20 +4,16 @@ class Pat
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int n,i,j;
-        n=sc.nextInt();
-        for(i=1;i<=n;i++)
+        int N,i,j;
+        N=sc.nextInt();
+        for(i=N;i>=1;i--)
         {
-            for(j=1;j<=n;j++)
+            for(j=N;j>=1;j--)
             {
-                if(i>=j)
-                {
-                    System.out.print(j);
-                }
+                System.out.print(j+" ");
             }
             System.out.print("
 ");
         }
-        
     }
 }
